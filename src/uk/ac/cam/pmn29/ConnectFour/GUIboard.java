@@ -25,7 +25,7 @@ class GUIboard extends JFrame {
 	
 	GUIboard(ConnectFourBoard b){
 		//Sets up the name of the window
-		super("Connect N!");
+		super("Connect N");
 		
 		//Initialise the stored board
 		mBoard = b;
