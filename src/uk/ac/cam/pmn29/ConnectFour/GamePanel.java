@@ -78,7 +78,7 @@ public class GamePanel extends JPanel {
         g.drawLine(x, y, x, y+h);
     }
     
-    protected void display(ConnectFourBoard board) {
+    void display(ConnectFourBoard board) {
         mBoard = board;
         repaint();
     }

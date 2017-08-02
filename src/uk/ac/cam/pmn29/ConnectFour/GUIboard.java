@@ -3,15 +3,10 @@ package uk.ac.cam.pmn29.ConnectFour;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javax.swing.*;
 
 
-public class GUIboard extends JFrame {
+class GUIboard extends JFrame {
 	//ConnectFourBoard to be displayed
 	private ConnectFourBoard mBoard;
 	
@@ -28,7 +23,7 @@ public class GUIboard extends JFrame {
 	private int mMaxPlayer;
 
 	
-	public GUIboard(ConnectFourBoard b){
+	GUIboard(ConnectFourBoard b){
 		//Sets up the name of the window
 		super("Connect N!");
 		
@@ -41,7 +36,7 @@ public class GUIboard extends JFrame {
 		//Update the maximum player value
 		mMaxPlayer = mBoard.getNumPlayers();
 		
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize(1024,768);
         
         //Add components to the JFrame
@@ -75,7 +70,7 @@ public class GUIboard extends JFrame {
 	    	
 	    	int col;
 	    	
-	    	//Input sanitisation
+	    	//Input sanitation
 	    	
 	    	try{
 	    		col = Integer.parseInt(colNum.getText());
@@ -153,7 +148,7 @@ public class GUIboard extends JFrame {
 	    }
 	 
 	//Display the board initially (when not visible)
-	 public void play() {
+	void play() {
 		setVisible(true);
 		printBoard();
 	    }

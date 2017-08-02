@@ -2,23 +2,18 @@ package uk.ac.cam.pmn29.ConnectFour;
 
 import java.awt.GridLayout;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javax.swing.*;
 
 public class StartFrame extends JFrame{
 	
-	public StartFrame(){
+	StartFrame(){
 		//Sets the name of the window
-		super("Connect N!");
+		super("Connect N");
 		
 		//Sets the size of the window
         setSize(500,500);
         
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         add(createInputField());
 	}
 	
@@ -74,7 +69,7 @@ public class StartFrame extends JFrame{
 	    	}
 	    	
 	    }    		
-	   );
+	    );
 	    
 	    //Add text to match the input forms
 	    inputPanel.add(new JLabel(" Width"));
@@ -92,9 +87,9 @@ public class StartFrame extends JFrame{
 	}
 	
 	//Main method called to initialise the whole application
-    public static void main(String[] args){
-    	StartFrame frame = new StartFrame();
+    public static void main(String[] args) {
+		StartFrame frame = new StartFrame();
 		frame.setVisible(true);
-    }
+	}
      
 }
