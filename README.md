@@ -1,6 +1,6 @@
 # ConnectFour
 
-A connect four game written in java using a Swing UI.
+A connect four game written in Java using a Swing UI.
 
 Features:
 * Any number of players
